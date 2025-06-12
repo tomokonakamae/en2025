@@ -8,3 +8,6 @@ old_Search-Replace-DB-master/
 # OS依存ファイル
 .DS_Store
 Thumbs.db
+
+# All-in-One WP Migration backup folder
+wp-content/ai1wm-backups/
