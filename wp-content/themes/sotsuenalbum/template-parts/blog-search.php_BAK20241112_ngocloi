@@ -1,0 +1,61 @@
+<?php
+    global $dir;
+    get_header();
+
+    $post_type = 'blog';
+
+    $cat_taxonomy = 'blog-category';
+    $cat_terms_all = get_terms(array(
+        'taxonomy' => $cat_taxonomy,
+        'orderby'    => 'menu_order',
+        'order'      => 'ASC',
+        'hide_empty' => true,
+    ));
+
+    $tag_taxonomy = 'blog-tag';
+    $tag_terms_all = get_terms(array(
+        'taxonomy' => $tag_taxonomy,
+        'orderby'    => 'menu_order',
+        'order'      => 'ASC',
+        'hide_empty' => true,
+    ));
+
+
+    $fea_taxonomy = 'blog-feature';
+    $fea_terms_all = get_terms(array(
+        'taxonomy' => $fea_taxonomy,
+        'orderby'    => 'menu_order',
+        'order'      => 'ASC',
+        'hide_empty' => true,
+    ));
+?>
+
+<div class="faq-anchorlinks__ttl blue">カテゴリで検索</div>
+<div class="faq-anchorlinks bgblue">
+    <ul class="flex faq-anchorlinks__list">
+        <?php foreach($cat_terms_all as $term): ?>
+            <li><a href="<?php echo esc_url(get_term_link($term->slug, $cat_taxonomy));?>"><?php echo $term->name; ?></a></li>
+        <?php endforeach; ?>
+    </ul>
+</div>
+
+<div class="faq-anchorlinks__box">
+<div class="faq-anchorlinks__ttl trigger">タグで検索</div>
+<div class="faq-anchorlinks">
+    <ul class="flex faq-anchorlinks__tags">
+        <?php foreach($tag_terms_all as $term): ?>
+            <li><a href="<?php echo esc_url(get_term_link($term->slug, $tag_taxonomy));?>"><?php echo $term->name; ?></a></li>                                <?php endforeach; ?>
+    </ul>
+</div>
+</div>
+
+<?php if(!empty($fea_terms_all)): ?>
+<div class="faq-anchorlinks__ttl green">特集で検索</div>
+<div class="faq-anchorlinks bggreen">
+    <ul class="flex faq-anchorlinks__list bdr">
+        <?php foreach($fea_terms_all as $term): ?>
+            <li><a href="<?php echo esc_url(get_term_link($term->slug, $fea_taxonomy));?>"><?php echo $term->name; ?></a></li>
+        <?php endforeach; ?>
+    </ul>
+</div>
+<?php endif; ?>

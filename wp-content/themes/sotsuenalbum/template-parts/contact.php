@@ -1,0 +1,48 @@
+<?php 
+	global $dir;
+?>
+
+<!-- sec sec-contact -->
+<section class="sec-contact">
+	<div class="img-bg">
+			<img src="<?php echo $dir;?>/assets/images/top/bg-top4.png" alt="image" width="2049" height="128">
+	</div>
+	<div class="sec-contact__inner">
+			<div class="container">
+					<div class="sec-contact__white flex-jus-between">
+							<div class="txt">
+									<h2 class="title__ttl01">サンプルセットをお届け！</h2>
+									<p>サンプルアルバムに商品カタログと制作ガイドをセットにしてお届けします。<br>無料サンプルセットは早ければ即日発送でお届けしています。<br>お気軽にお問い合わせください。</p>
+									<span class="pink"><img src="<?php echo $dir;?>/assets/images/top/s1.png" alt="無料" width="95" height="91"></span>
+							</div>
+							<div class="img">
+									<img src="<?php echo $dir;?>/assets/images/top/book.png" alt="サンプルセットをお届け！" width="357" height="210">
+							</div>
+					</div>
+					<h3 class="title__ttl02"><span>お見積もり依頼・無料の資料請求（カタログ/サンプルアルバム）はこちらから</span></h3>
+					<div class="btn__infor flex-jus-between">
+							<div class="btn__phone">
+									<a href="tel:0120-927-928">
+											<span class="time">平日9:00〜18:00</span>
+											<span class="txt">0120-927-928</span>
+									</a>
+							</div>
+							<div class="btn__contact">
+									<a href="https://www.sotsuenalbum.com/contact/">
+											<small>資料ダウンロードもできる</small>
+											<span class="txt">お問い合わせフォーム</span>
+									</a>
+							</div>
+							<div class="btn__line">
+									<a href="https://www.yumephoto.com/data/go-to-line.php" target="_blank">
+											<small>友だち追加をして話しかけてください！</small>
+											<span class="txt">LINEでやり取りする</span>
+									</a>
+							</div>
+					</div>
+			</div>
+	</div>
+	<div class="img-bg">
+			<img src="<?php echo $dir;?>/assets/images/top/bg-bot4.png" alt="image" width="2049" height="133">
+	</div>
+</section>

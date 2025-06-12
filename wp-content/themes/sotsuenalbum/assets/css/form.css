@@ -1,0 +1,562 @@
+@charset "UTF-8";
+.contact-form dl {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.contact-form dl:first-child{
+    
+}
+.contact-form dt,
+.contact-form dd {
+    padding: 30px;
+}
+.contact-form dt {
+    position: relative;
+    width: 25%;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.6rem;
+    padding-right: 50px;
+    background: #E1EDF6;
+}
+@media only screen and (max-width: 1199px){
+    .contact-form dt {
+        width: 30%;
+    }
+}
+@media only screen and (max-width: 960px){
+    .contact-form dt {
+        font-size: 1.4rem;
+    }
+    .contact-form dt,
+    .contact-form dd {
+        padding: 20px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .contact-form dt {
+        width: 100%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 16px;
+        padding-left: 75px;
+        padding-right: 0;
+    }
+}
+
+.contact-form dt .form-title {
+    line-height: 1;
+    margin-right: 10px;
+}
+
+.contact-form dt small {
+    font-size: 12px;
+    display: block;
+}
+
+.contact-form dt .form-label {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 20px;
+    margin: auto;
+    display: inline-block;
+    text-align: center;
+    line-height: 1;
+    font-weight: normal;
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    font-size: 1.6rem;
+}
+@media only screen and (max-width: 960px){
+    .contact-form dt .form-label {
+        width: 45px;
+        height: 25px;
+        line-height: 25px;
+        font-size: 1.3rem;
+        right: auto;
+        left: 15px;
+    }
+}
+
+
+.contact-form dt .ninni {
+    background: #222222;
+}
+
+.contact-form dt .hissu {
+    background: #004EA2;
+}
+
+.contact-form dd {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.4rem;
+}
+@media only screen and (max-width: 1199px){
+    .contact-form dd {
+        width: 70%;
+    }
+}
+@media screen and (max-width: 767px) {
+    .contact-form dd {
+        width: 100%;
+        display: block;
+        padding: 10px 0 0;
+    }
+}
+.contact-form dd input[type="radio"] {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.contact-form dd input[type="text"],
+.contact-form dd input[type="password"],
+.contact-form dd input[type="email"],
+.contact-form dd input[type="tel"],
+.contact-form dd select{
+    padding: 3px 10px;
+    height: 45px;
+    width: 100%;
+    border: 1px solid #BBBBBB;
+    background: #FDFDFD;
+    color: #222;
+    font-size: 1.4rem;
+}
+
+.contact-form dd input[type="text"]::placeholder,
+.contact-form dd input[type="password"]::placeholder,
+.contact-form dd input[type="email"]::placeholder,
+.contact-form dd input[type="tel"]::placeholder {
+    font-weight: normal;
+    color: #ADADAD;
+    line-height: 1.5;
+    font-family: 'Noto Sans JP', "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴシック ProN", "Hiragino Kaku Gothic ProN", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "Yu Gothic", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    opacity: 0.5;
+}
+@media screen and (max-width: 767px) {
+.contact-form dd input[type="text"]::placeholder,
+.contact-form dd input[type="password"]::placeholder,
+.contact-form dd input[type="email"]::placeholder,
+    .contact-form dd input[type="tel"]::placeholder {
+        font-size: 13px;
+    }
+}
+.contact-form dd .ipt-address {
+    max-width: 415px;
+}
+
+.contact-form dd input,
+.contact-form dd select,
+.contact-form dd optgroup,
+.contact-form dd option,
+.contact-form dd textarea {
+    font-family: 'Noto Sans JP', "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴシック ProN", "Hiragino Kaku Gothic ProN", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "Yu Gothic", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-size: 1.4rem;
+    background: #FDFDFD;
+    font-weight: normal;
+}
+@media screen and (max-width: 767px) {
+.contact-form dd input,
+.contact-form dd select,
+.contact-form dd optgroup,
+.contact-form dd option,
+    .contact-form dd textarea {
+        font-size: 14px;
+    }
+}
+.contact-form dd .form-row {
+    display: flex;
+}
+.contact-form dd .form-zip {
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.form-zip-btn {
+    background: #ba7b70;
+    border-radius: 5px;
+    padding: 7px 10px;
+    line-height: 1.5;
+    margin-left: 20px;
+    border: none;
+    color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+    .form-zip-btn {
+        margin: 10px 0;
+        display: block;
+        margin-left: 40px;
+    }
+}
+
+.form-zip-btn:hover {
+    opacity: 0.8;
+    transition: all 0.5s;
+}
+
+.form-state {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.contact-form dd .form-zip input[type="text"] {
+    width: 270px;
+}
+
+@media screen and (max-width: 640px) {
+    .contact-form dd .form-zip input[type="text"] {
+        width: 230px;
+    }
+}
+.box-select {
+  position: relative;
+  display: inline-block;
+    width: 400px;
+    max-width: 100%;
+}
+
+.box-select select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+
+.box-select select::-ms-expand {
+  display: none;
+}
+
+.box-select:after {
+  position: absolute;
+  content: "";
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 9px solid transparent;
+  border-top: 9px solid #000000;
+  right: 10px;
+  top: 40%;
+}
+
+select {
+  width: 100%;
+  padding: 5px 20px 5px 10px;
+  height: 40px;
+  border: 1px solid #888888;
+  color: #999999;
+  background-color: #f6f6f6;
+  letter-spacing: 0.15em;
+}
+
+select:focus {
+  border: 1px solid #d9dcdb;
+  outline: none;
+}
+
+select option {
+  color: #313131;
+}
+.contact-form dd textarea {
+    width: 100%;
+    height: 160px;
+    padding: 5px 10px;
+    resize: none;
+    border: 1px solid #d9dcdb;
+    border-radius: 5px;
+}
+
+.contact-form dd textarea::placeholder {
+    color: #a8a8a8;
+    line-height: 1.5;
+}
+.contact-form dd .list-radio{
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact-form dd .list-radio li {
+    padding-right: 0;
+    position: relative;
+    margin-right: 1%;
+    margin: 3px 0;
+    width: 32%;
+}
+.contact-form dd .list-radio .other{
+    width: 100%;
+}
+.contact-form dd .list-radio .other input[type="text"]{
+    margin-left: 30px;
+    margin-top: 5px;
+}
+@media only screen and (max-width: 960px){
+    .contact-form dd .list-radio li{
+        width: 48%;
+    }
+}
+@media screen and (max-width: 767px) {
+    .contact-form dd .list-radio .other input[type="text"]{
+        margin-left: 0;
+    }
+}
+@media only screen and (max-width: 480px){
+    .contact-form dd .list-radio li{
+        width: 100%;
+    }
+}
+.contact-form dd .list-radio input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    border-color: #818181;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    opacity: 0;
+}
+.contact-form dd .list-radio label{
+    position: relative;
+    padding-left: 30px;
+    display: inline-block;
+}
+.contact-form dd .list-radio label:before{
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    border: 1px solid #818181;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+}
+.contact-form dd .list-radio label:after{
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    background: #004EA2;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    opacity: 0;
+}
+.contact-form dd .list-radio input[type="radio"]:checked+label:before {
+    border-color: #004EA2;
+}
+.contact-form dd .list-radio input[type="radio"]:checked+label:after {
+    opacity: 1;
+}
+.contact-form dd .list-checkbox{
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact-form dd .list-checkbox li {
+    padding: 5px 30px;
+    padding-right: 0;
+    position: relative;
+    margin-right: 2%;
+    margin: 3px 0;
+    width: 25%;
+}
+
+.contact-form dd .list-checkbox input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    border-color: #d9dcdb;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+@media screen and (max-width: 767px) {
+    .contact-form dd .list-checkbox li {
+        width: 48%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .contact-form dd .list-checkbox li{
+        font-size: 13px;
+        padding-left: 25px;
+    }
+    .contact-form dd .list-checkbox input[type="checkbox"] {
+        width: 15px;
+        height: 15px;
+    }
+}
+.contact-form dd .select_time {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.contact-form dd .select_time li {
+    width: 47%;
+}
+
+.contact-form dd .select_time li select {
+    width: calc(100% - 30px);
+    height: 36px;
+    border: 1px solid #000000;
+}
+
+.contact-form dd .flex .flex {
+    margin: 5px 0;
+    flex-wrap: nowrap;
+}
+
+.contact-submit {
+    margin: 60px 0 20px;
+    text-align: center;
+}
+.contact-submit #ck1{
+    border-color: #004EA2;
+    width: 17px;
+    height: 17px;
+    position: relative;
+    top: 2px;
+}
+@media screen and (max-width: 767px) {
+    .contact-submit {
+        margin: 0 0 20px;
+        text-align: center;
+    }
+}
+.contact-submit-btn {
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    width: 290px;
+    margin: 10px;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    border: 2px solid #004EA2;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+@media screen and (max-width: 767px) {
+    .contact-submit-btn {
+        width: 250px;
+    }
+}
+.contact-submit-btn:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 15px;
+    width: 32px;
+    height: 19px;
+    background: url(../common_img/arr-blue.png) center right no-repeat;
+    background-size: 17.5px;
+}
+.contact-submit-btn .arrow {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    bottom: 0;
+    margin: auto;
+    z-index: 2;
+}
+
+.contact-submit-btn.back:after {
+    right: auto;
+    left: 20px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.contact-submit-btn input,
+.contact-submit-btn a {
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    font-size: 1.5rem;
+    font-family: 'Noto Sans JP', "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "Yu Gothic", "ヒラギノ角ゴシック ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    position: relative;
+    border: none;
+    background: none;
+    outline: none;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    color: #004EA2;
+    padding: 0 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+@media screen and (max-width: 767px) {
+    .contact-submit-btn input,
+    .contact-submit-btn a {
+        font-size: 16px;
+        height: 50px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .contact-submit-btn:hover {
+        opacity: 0.8;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+}
+
+.form-submit {
+    margin-bottom: 30px;
+}
+
+.form-submit input {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+.flex-ipt p{
+    width: 40%;
+    margin-right: 20px;
+}
+.birthday li{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.birthday li p{
+    margin-left: 10px;
+}
+.birthday li .box-select{
+    width: 100px;
+}
+@media screen and (max-width: 767px) {
+    .birthday li .box-select{
+        width: 70px;
+    }
+    .birthday li .box-select:after{
+        right: 5px;
+    }
+    .birthday li p{
+        margin-left: 5px;
+    }
+}
