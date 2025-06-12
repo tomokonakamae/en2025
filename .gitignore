@@ -1,0 +1,10 @@
+# アップロード画像など
+wp-content/uploads/
+
+# データベース置換ツール
+Search-Replace-DB-master/
+old_Search-Replace-DB-master/
+
+# OS依存ファイル
+.DS_Store
+Thumbs.db
