@@ -1,4 +1,4 @@
-<?php 
+<?php
 	global $dir;
 
     //計測用パラメータをCookieに保存
@@ -75,7 +75,7 @@
     </script>
     <noscript>
     <iframe src="//b.yjtag.jp/iframe?c=UqNmQGb" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-    </noscript> 
+    </noscript>
     <!-- Yahoo and Twitter Add -->
 
 
@@ -123,7 +123,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="cm-header__infor">
                             <p class="show-pc">お見積もり依頼・無料の資料請求（カタログ/サンプルアルバム）はこちらから</p>
                             <p class="show-sp">お見積もり依頼・無料の資料請求・ご相談</p>
@@ -168,6 +168,7 @@
                         <li><a href="<?php echo esc_url(get_post_type_archive_link('voice'));?>">ご利用者さまの声</a></li>
                         <li><a href="<?php echo esc_url(get_post_type_archive_link('faq'));?>">よくある質問</a></li>
                         <li><a href="<?php echo esc_url(get_post_type_archive_link('blog'));?>">まるわかりマガジン</a></li>
+                        <li><a href="<?php echo esc_url(get_post_type_archive_link('hints'));?>">つくるヒント</a></li>
                         <li><a href="<?php echo esc_url(get_post_type_archive_link('recipe'));?>">デザインレシピ</a></li>
                         <li class="show-sp"><a href="<?php echo esc_url(get_post_type_archive_link('newtopics'));?>">お知らせ</a></li>
                     </ul>
@@ -203,5 +204,5 @@
                     <span></span>
                     <span></span>
                 </div>
-            </div> 
+            </div>
         </header>

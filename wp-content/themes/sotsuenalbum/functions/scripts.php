@@ -17,6 +17,10 @@
 			wp_enqueue_style( 'content', $dir . '/assets/css/content.css', array(), filemtime(get_theme_file_path('assets/css/content.css')), 'all' );
 		}
 		wp_enqueue_style( 'utility', $dir . '/assets/css/utility.css', array(), filemtime(get_theme_file_path('assets/css/utility.css')), 'all' );
+    // つくるヒントのスタイル追加
+    if ( is_singular('hints') ) {
+      wp_enqueue_style( 'hints', $dir . '/assets/css/hints.css', array(), filemtime(get_theme_file_path('assets/css/hints.css')), 'all' );
+}
 
 		// JSファイルを登録
 		wp_enqueue_script( "viewport", $dir."/assets/js/viewport.js", array(), filemtime(get_theme_file_path('assets/js/viewport.js')), false );
